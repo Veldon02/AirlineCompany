@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de3e0091-a1a8-41fc-865a-e39b7f5cad6a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/AirlineСompany/AirlineCompany.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Airplane/Airplane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/AddAirplaneCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ChangeFlightCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ExitCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/FindByFuelConsumptionRange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/HelpCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ICommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/PickUpFromRepairCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/RemoveAirplaneCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/SendForRepairCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowCargoCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowPassengerCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowPrivateCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowUnderRepairCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowWorkingCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/SortByFlightRangeCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Program/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Program/Program.java" afterDir="false" />
-    </list>
+    <list default="true" id="de3e0091-a1a8-41fc-865a-e39b7f5cad6a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,6 +60,7 @@
       <workItem from="1666181874577" duration="5489000" />
       <workItem from="1666264263890" duration="13320000" />
       <workItem from="1666336407141" duration="8669000" />
+      <workItem from="1666720601898" duration="409000" />
     </task>
     <servers />
   </component>
