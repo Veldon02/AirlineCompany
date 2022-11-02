@@ -1,6 +1,7 @@
 package AirplaneManagement.AirlineСompany;
 
 import AirplaneManagement.Airplane.Airplane;
+import AirplaneManagement.Airplane.AirplaneRepository;
 import AirplaneManagement.Menu.Commands.ExitCommand;
 import AirplaneManagement.Menu.Commands.HelpCommand;
 import AirplaneManagement.Menu.Menu;
@@ -13,21 +14,20 @@ public class AirlineCompany {
     private static AirlineCompany instance;
     private String companyName;
     private final List<Airplane> airplanes;
-    private AirlineCompany() {
-        airplanes = new ArrayList<>();
-    }
 
-    public List<Airplane> getAirplanes(){
-        return airplanes;
-    }
+    private final AirplaneRepository airplaneRepository;
 
     public String getCompanyName(){
         return companyName;
     }
 
-    private AirlineCompany(String name) {
+    public List<Airplane> getAirplanes(){
+        return airplaneRepository.getAll();
+    }
+
+    private AirlineCompany() {
         airplanes = new ArrayList<>();
-        companyName = name;
+        airplaneRepository = new AirplaneRepository();
     }
 
     public static AirlineCompany getInstance() {
@@ -36,7 +36,7 @@ public class AirlineCompany {
         return instance;
     }
 
-    public void addAirplane(){
-        airplanes.add(new Airplane());
-    }
+//    public void addAirplane(){
+//        airplanes.add(new Airplane());
+//    }
 }

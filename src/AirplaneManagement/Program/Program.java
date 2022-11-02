@@ -1,6 +1,7 @@
 package AirplaneManagement.Program;
 
 import AirplaneManagement.AirlineСompany.AirlineCompany;
+import AirplaneManagement.Airplane.AirplaneRepository;
 import AirplaneManagement.Menu.Commands.ICommand;
 import AirplaneManagement.Menu.Menu;
 
@@ -10,10 +11,6 @@ import java.util.Scanner;
 public class Program {
     public static void main(String[] args) {
         var airlineCompany = AirlineCompany.getInstance();
-        airlineCompany.addAirplane();
-        airlineCompany.addAirplane();
-        airlineCompany.addAirplane();
-        airlineCompany.addAirplane();
         var menu = Menu.getInstance();
         Scanner input = new Scanner(System.in);
         String command;

@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de3e0091-a1a8-41fc-865a-e39b7f5cad6a" name="Changes" comment="" />
+    <list default="true" id="de3e0091-a1a8-41fc-865a-e39b7f5cad6a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Airplane/AirplaneRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AirplaneManagement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AirplaneManagement.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/AirlineСompany/AirlineCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/AirlineСompany/AirlineCompany.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Airplane/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Airplane/Airplane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/HelpCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Program/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Program/Program.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,8 +42,19 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java_Projects/AirplaneManagement/lib/mysql-connector-j-8.0.31.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver.localdb&quot;,
+      &quot;sqlserver&quot;
+    ]
   }
 }</component>
   <component name="RunManager">
@@ -60,7 +79,11 @@
       <workItem from="1666181874577" duration="5489000" />
       <workItem from="1666264263890" duration="13320000" />
       <workItem from="1666336407141" duration="8669000" />
-      <workItem from="1666720601898" duration="409000" />
+      <workItem from="1666720601898" duration="983000" />
+      <workItem from="1666948646596" duration="2570000" />
+      <workItem from="1667319819796" duration="4458000" />
+      <workItem from="1667328132362" duration="3527000" />
+      <workItem from="1667377987298" duration="9677000" />
     </task>
     <servers />
   </component>
@@ -77,6 +100,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/AirplaneManagement/Airplane/Airplane.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

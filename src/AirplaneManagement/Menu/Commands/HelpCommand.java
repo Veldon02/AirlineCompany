@@ -7,12 +7,11 @@ public class HelpCommand implements ICommand{
 
     @Override
     public void execute() {
-        var commands = (LinkedHashMap)Menu.getInstance().getCommands();
+        var commands = (LinkedHashMap<String,ICommand>)Menu.getInstance().getCommands();
         for (var command: commands.keySet()) {
             System.out.println(command + " - " + ((ICommand)commands.get(command)).getInformation());
         }
         System.out.println();
-
     }
 
     @Override
