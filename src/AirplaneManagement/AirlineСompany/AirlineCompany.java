@@ -13,20 +13,17 @@ import java.util.List;
 public class AirlineCompany {
     private static AirlineCompany instance;
     private String companyName;
-    private final List<Airplane> airplanes;
-
     private final AirplaneRepository airplaneRepository;
 
     public String getCompanyName(){
         return companyName;
     }
 
-    public List<Airplane> getAirplanes(){
+    public ArrayList<Airplane> getAirplanes(){
         return airplaneRepository.getAll();
     }
 
     private AirlineCompany() {
-        airplanes = new ArrayList<>();
         airplaneRepository = new AirplaneRepository();
     }
 
@@ -36,7 +33,12 @@ public class AirlineCompany {
         return instance;
     }
 
-//    public void addAirplane(){
-//        airplanes.add(new Airplane());
-//    }
+    public void addAirplane(Airplane airplane){
+        airplaneRepository.addAirplane(airplane);
+    }
+
+    public void deleteAirplane(int id){
+        airplaneRepository.deleteAirplane(id);
+    }
+
 }

@@ -3,6 +3,7 @@ package AirplaneManagement.Airplane;
 import AirplaneManagement.AirlineСompany.AirlineCompany;
 
 public class Airplane  {
+    private int ID;
     private String name;
     private String type;
     private boolean underRepair;
@@ -12,6 +13,7 @@ public class Airplane  {
     private int fuelConsumption;
 
     private Airplane(AirplaneBuilder builder){
+        this.ID = builder.ID;
         this.name = builder.name;
         this.type = builder.type;
         this.underRepair = builder.underRepair;
@@ -61,10 +63,11 @@ public class Airplane  {
 
     @Override
     public String toString(){
-        return name + "\n" + type;
+        return "ID: " +ID + "\n" + name + " || " + type;
     }
 
     public static class AirplaneBuilder{
+        private int ID = 0;
         private String name;
         private String type;
         private boolean underRepair;
@@ -83,6 +86,10 @@ public class Airplane  {
         }
         public AirplaneBuilder setUnderRepair(boolean underRepair){
             this.underRepair = underRepair;
+            return this;
+        }
+        public AirplaneBuilder setID(int ID){
+            this.ID = ID;
             return this;
         }
         public AirplaneBuilder setCarryingCapacity(int carryingCapacity){
