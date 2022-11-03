@@ -1,6 +1,7 @@
 package AirplaneManagement.Menu.Commands;
 
 import AirplaneManagement.AirlineСompany.AirlineCompany;
+import AirplaneManagement.Program.SafeScanner;
 
 import java.sql.SQLOutput;
 import java.util.Scanner;
@@ -9,8 +10,9 @@ public class RemoveAirplaneCommand implements ICommand{
     @Override
     public void execute() {
         System.out.println("Enter ID of airplane:");
-        Scanner scanner = new Scanner(System.in);
-        AirlineCompany.getInstance().deleteAirplane(scanner.nextInt());
+        var airlineCompany = AirlineCompany.getInstance();
+        int id = SafeScanner.scanInt(airlineCompany.getIDs());
+        airlineCompany.deleteAirplane(id);
         System.out.println("you removed airplane");
     }
 

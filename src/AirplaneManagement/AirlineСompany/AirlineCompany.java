@@ -41,4 +41,18 @@ public class AirlineCompany {
         airplaneRepository.deleteAirplane(id);
     }
 
+    public void sendAirplaneForRepair(int id){
+        airplaneRepository.sendAirplaneForRepair(id);
+    }
+
+    public void pickUpFromRepair(int id){
+        airplaneRepository.pickUpFromRepair(id);
+    }
+
+    public ArrayList<Integer> getIDs(){
+        return airplaneRepository.getIDs();
+    }
+
+
+
 }

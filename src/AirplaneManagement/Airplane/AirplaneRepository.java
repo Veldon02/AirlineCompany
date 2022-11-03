@@ -92,14 +92,33 @@ public class AirplaneRepository {
     }
 
 
-    public void update(){
+    public void sendAirplaneForRepair(int id){
         try {
-            statement.executeUpdate("update airplanetype\n" +
-                    "set name = \"тест\"\n" +
-                    "where typeid = 2;");
+            statement.executeUpdate("call SendAirplaneForRepair(" + id + ");");
         }catch (Exception e){
-            System.out.println("апдейт похерився");
+            System.out.println(e.getMessage());
         }
     }
+
+    public void pickUpFromRepair(int id){
+        try {
+            statement.executeUpdate("call PickUpFromRepair(" + id + ");");
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public ArrayList<Integer> getIDs(){
+        ArrayList<Integer> res = new ArrayList<>();
+        try {
+            ResultSet resultSet = statement.executeQuery("select airplaneid from airplane");
+            while (resultSet.next())
+                res.add(resultSet.getInt("AirplaneID"));
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+        return res;
+    }
+
 
 }
