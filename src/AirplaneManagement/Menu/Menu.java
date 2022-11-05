@@ -37,15 +37,18 @@ public final class Menu {
         commands.put("show under repair", new ShowUnderRepairCommand());
         commands.put("show cargo", new ShowCargoCommand());
         commands.put("show passenger", new ShowPassengerCommand());
-        commands.put("show private", new ShowPrivateCommand());
         commands.put("add airplane", new AddAirplaneCommand());
         commands.put("remove airplane", new RemoveAirplaneCommand());
-        commands.put("change flight", new ChangeFlightCommand());
         commands.put("send for repair", new SendForRepairCommand());
         commands.put("pick up from repair", new PickUpFromRepairCommand());
+        commands.put("change type", new ChangeTypeCommand());
+        commands.put("change carrying capacity", new ChangeCarryingCapacityCommand());
+        commands.put("change passenger seats number", new ChangePassengerSeatsNumberCommand());
+        commands.put("change max flight range", new ChangeMaxFlightRangeCommand());
         commands.put("sort by flight range", new SortByFlightRangeCommand());
         commands.put("find by fuel consumption range", new FindByFuelConsumptionRange());
+        commands.put("get capacity sum", new GetCapacitySumCommand());
+        commands.put("get carrying capacity sum", new GetCarryingCapacitySumCommand());
         commands.put("exit", new ExitCommand());
-
     }
 }

@@ -1,5 +1,7 @@
 package AirplaneManagement.Airplane;
 
+import AirplaneManagement.Menu.Commands.SortByFlightRangeCommand;
+
 import javax.xml.transform.Result;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -31,54 +33,26 @@ public class AirplaneRepository {
     public ArrayList<Airplane> getAll(){
         try {
             ArrayList<Airplane> res = new ArrayList<>();
-            ResultSet resultSet = statement.executeQuery("call GetAllAirplanes;");
-            Airplane airplane;
+            ResultSet resultSet = statement.executeQuery("call GetAllAirplanes();");
             while(resultSet.next()){
-                var name = resultSet.getString("Name");
-                var type = resultSet.getString("Type");
-                airplane = new Airplane.AirplaneBuilder(name,type)
-                        .setID(resultSet.getInt("AirplaneID"))
-                        .setCarryingCapacity(resultSet.getInt("CarryingCapacity"))
-                        .setFuelConsumption(resultSet.getInt("FuelConsumption"))
-                        .setUnderRepair(resultSet.getBoolean("UnderRepair"))
-                        .setPassengerSeatsNumber(resultSet.getInt("PassengerSeatsNumber"))
-                        .setMaxFlightRange(resultSet.getInt("MaxFlightRange"))
-                        .build();
-                res.add(airplane);
+                res.add(parseAirplane(resultSet));
             }
             return res;
         }catch (Exception e) {
-            System.out.println("oops");
+            System.out.println(e.getMessage());
             return null;
         }
     }
 
     public boolean addAirplane(Airplane airplane){
-        StringBuilder query = new StringBuilder("insert into airplane(Name,TypeID,UnderRepair,FuelConsumption,CarryingCapacity,PassengerSeatsNumber,MaxFlightRange)\nvalues(");
-        query.append('"');
-        query.append(airplane.getName());
-        query.append('"');
-        query.append(',');
-        if (airplane.getType().equals("Пасажирський"))
-            query.append(1);
-        else
-            query.append(2);
-        query.append(',');
-        query.append(airplane.isUnderRepair());
-        query.append(',');
-        query.append(airplane.getFuelConsumption());
-        query.append(',');
-        query.append(airplane.getCarryingCapacity());
-        query.append(',');
-        query.append(airplane.getPassengerSeatsNumber());
-        query.append(',');
-        query.append(airplane.getMaxFlightRange());
-        query.append(");");
         try{
-            statement.executeUpdate(query.toString());
+            var query = String.format("call InsertAirplane(\"%s\",\"%s\",%s,%d,%d,%d,%d);", airplane.getName(),
+                    airplane.getType(),airplane.isUnderRepair(),airplane.getFuelConsumption(),
+                    airplane.getCarryingCapacity(), airplane.getPassengerSeatsNumber(),airplane.getMaxFlightRange());
+            statement.executeQuery(query);
             return true;
         }catch (Exception e){
-            System.out.println("не пішло");
+            System.out.println(e.getMessage());
             return false;
         }
     }
@@ -120,5 +94,137 @@ public class AirplaneRepository {
         return res;
     }
 
+    public ArrayList<Airplane> sortByFlightRange(){
+        try {
+            ArrayList<Airplane> res = new ArrayList<>();
+            ResultSet resultSet = statement.executeQuery("call GetSortByMaxFlightRange();");
+            while(resultSet.next()){
+                res.add(parseAirplane(resultSet));
+            }
+            return res;
+        }catch (Exception e) {
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
+
+    private Airplane parseAirplane(ResultSet resultSet){
+        try {
+            var name = resultSet.getString("Name");
+            var type = resultSet.getString("Type");
+            return new Airplane.AirplaneBuilder(name, type)
+                    .setID(resultSet.getInt("AirplaneID"))
+                    .setCarryingCapacity(resultSet.getInt("CarryingCapacity"))
+                    .setFuelConsumption(resultSet.getInt("FuelConsumption"))
+                    .setUnderRepair(resultSet.getBoolean("UnderRepair"))
+                    .setPassengerSeatsNumber(resultSet.getInt("PassengerSeatsNumber"))
+                    .setMaxFlightRange(resultSet.getInt("MaxFlightRange"))
+                    .build();
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+            return null;
+        }
+
+    }
+
+    public ArrayList<Airplane> findByFuelConsumptionRange(int num1,int num2){
+        try {
+            ResultSet resultSet =  statement.executeQuery("call FindByFuelConsumptionRange("+num1+","+num2+");");
+            if (!resultSet.next()) return null;
+            ArrayList<Airplane> res = new ArrayList<>();
+            do{
+                res.add(parseAirplane(resultSet));
+            }
+            while(resultSet.next());
+
+            return res;
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
+
+    public Integer getCapacitySum(){
+        try{
+            ResultSet resultSet = statement.executeQuery("select sum(passengerseatsnumber) from airlinecompany.airplane;");
+            resultSet.next();
+            return resultSet.getInt(1);
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+            return null;
+        }
+
+    }
+
+    public Integer getCarryingCapacitySum(){
+        try{
+            ResultSet resultSet = statement.executeQuery("select sum(CarryingCapacity) from airplane;");
+            resultSet.next();
+            return  resultSet.getInt(1);
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
+
+    public ArrayList<Airplane> getCargo(){
+        try {
+            ResultSet resultSet =  statement.executeQuery("call GetCargo();");
+            ArrayList<Airplane> res = new ArrayList<>();
+            while(resultSet.next()){
+                res.add(parseAirplane(resultSet));
+            }
+            return res;
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
+
+    public ArrayList<Airplane> getPassenger(){
+        try {
+            ResultSet resultSet =  statement.executeQuery("call GetPassenger();");
+            ArrayList<Airplane> res = new ArrayList<>();
+            while(resultSet.next()){
+                res.add(parseAirplane(resultSet));
+            }
+            return res;
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
+
+    public void changeType(int id, int newType){
+        try{
+            statement.executeQuery(String.format("call UpdateType(%d,%d)",id,newType));
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public void changeCarryingCapacity(int id, int carryingCapacity){
+        try{
+            statement.executeQuery(String.format("call UpdateCarryingCapacity(%d,%d)",id,carryingCapacity));
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public void changePassengerSeatsNumberCommand(int id, int number){
+        try{
+            statement.executeQuery(String.format("call UpdatePassengerSeatsNumber(%d,%d)",id,number));
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public void changeMaxFlightRange(int id, int range){
+        try{
+            statement.executeQuery(String.format("call UpdateMaxFlightRange(%d,%d)",id,range));
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
 
 }

@@ -19,9 +19,7 @@ public class AirlineCompany {
         return companyName;
     }
 
-    public ArrayList<Airplane> getAirplanes(){
-        return airplaneRepository.getAll();
-    }
+
 
     private AirlineCompany() {
         airplaneRepository = new AirplaneRepository();
@@ -33,8 +31,12 @@ public class AirlineCompany {
         return instance;
     }
 
-    public void addAirplane(Airplane airplane){
-        airplaneRepository.addAirplane(airplane);
+    public ArrayList<Airplane> getAirplanes(){
+        return airplaneRepository.getAll();
+    }
+
+    public boolean addAirplane(Airplane airplane){
+        return airplaneRepository.addAirplane(airplane);
     }
 
     public void deleteAirplane(int id){
@@ -53,6 +55,42 @@ public class AirlineCompany {
         return airplaneRepository.getIDs();
     }
 
+    public ArrayList<Airplane> sortByFlightRange(){
+        return airplaneRepository.sortByFlightRange();
+    }
 
+    public ArrayList<Airplane> findByFuelConsumptionRange(int num1, int num2){
+        return airplaneRepository.findByFuelConsumptionRange(num1, num2);
+    }
 
+    public Integer getCarryingCapacitySum(){
+        return airplaneRepository.getCarryingCapacitySum();
+    }
+
+    public Integer getCapacitySum(){
+        return airplaneRepository.getCapacitySum();
+    }
+
+    public ArrayList<Airplane> getCargo(){
+        return airplaneRepository.getCargo();
+    }
+    public ArrayList<Airplane> getPassenger(){
+        return airplaneRepository.getPassenger();
+    }
+
+    public void changeType(int id, int newType){
+        airplaneRepository.changeType(id, newType);
+    }
+
+    public void changeCarryingCapacity(int id, int carryingCapacity){
+        airplaneRepository.changeCarryingCapacity(id,carryingCapacity);
+    }
+
+    public void changePassengerSeatsNumberCommand(int id, int number){
+        airplaneRepository.changePassengerSeatsNumberCommand(id,number);
+    }
+
+    public void changeMaxFlightRange(int id, int range){
+        airplaneRepository.changeMaxFlightRange(id,range);
+    }
 }

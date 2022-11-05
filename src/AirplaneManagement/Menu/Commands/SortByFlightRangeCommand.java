@@ -1,9 +1,18 @@
 package AirplaneManagement.Menu.Commands;
 
+import AirplaneManagement.AirlineСompany.AirlineCompany;
+import AirplaneManagement.Airplane.Airplane;
+import AirplaneManagement.Program.TableElements;
+
 public class SortByFlightRangeCommand implements ICommand{
     @Override
     public void execute() {
-        System.out.println("sorted airplanes");
+        TableElements.drawHeader();
+        for (var plane: AirlineCompany.getInstance().sortByFlightRange()) {
+            TableElements.drawSplitter();
+            System.out.println(plane);
+        }
+        TableElements.drawSplitter();
         System.out.println();
     }
 

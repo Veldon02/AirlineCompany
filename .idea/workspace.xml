@@ -2,15 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de3e0091-a1a8-41fc-865a-e39b7f5cad6a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Program/SafeScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ChangeCarryingCapacityCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ChangeMaxFlightRangeCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ChangePassengerSeatsNumberCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ChangeTypeCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/GetCapacitySumCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/GetCarryingCapacitySumCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Program/TableElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/AirlineСompany/AirlineCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/AirlineСompany/AirlineCompany.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Airplane/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Airplane/Airplane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Airplane/AirplaneRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Airplane/AirplaneRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/AddAirplaneCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/AddAirplaneCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/PickUpFromRepairCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/PickUpFromRepairCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/RemoveAirplaneCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/RemoveAirplaneCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/SendForRepairCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/SendForRepairCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ChangeFlightCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/FindByFuelConsumptionRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/FindByFuelConsumptionRange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowCargoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowCargoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowPassengerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowPassengerCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowPrivateCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowUnderRepairCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowUnderRepairCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowWorkingCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowWorkingCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/SortByFlightRangeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/SortByFlightRangeCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Program/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Program/Program.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,26 +55,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Java_Projects/AirplaneManagement",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java_Projects/AirplaneManagement&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlserver.localdb",
-      "sqlserver"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver.localdb&quot;,
+      &quot;sqlserver&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Program" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="AirplaneManagement.Program.Program" />
@@ -91,6 +105,9 @@
       <workItem from="1667422852828" duration="16000" />
       <workItem from="1667458392034" duration="18360000" />
       <workItem from="1667505761330" duration="5656000" />
+      <workItem from="1667564092770" duration="15279000" />
+      <workItem from="1667656220408" duration="3033000" />
+      <workItem from="1667659505032" duration="6251000" />
     </task>
     <servers />
   </component>
@@ -107,6 +124,22 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/AirplaneManagement/Airplane/AirplaneRepository.java</url>
+          <line>148</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/AddAirplaneCommand.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

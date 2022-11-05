@@ -63,7 +63,8 @@ public class Airplane  {
 
     @Override
     public String toString(){
-        return "ID: " +ID + "\n" + name + " || " + type;
+        return String.format("|%4d|%12s|%10s|%13s|%17d|%18d|%22d|%16d|",
+                ID,name,type,underRepair,fuelConsumption,carryingCapacity,passengerSeatsNumber,maxFlightRange);
     }
 
     public static class AirplaneBuilder{

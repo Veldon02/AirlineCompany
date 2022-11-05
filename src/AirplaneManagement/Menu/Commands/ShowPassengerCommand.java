@@ -1,9 +1,18 @@
 package AirplaneManagement.Menu.Commands;
 
+import AirplaneManagement.AirlineСompany.AirlineCompany;
+import AirplaneManagement.Program.TableElements;
+
 public class ShowPassengerCommand implements ICommand{
     @Override
     public void execute() {
-        System.out.println("passengers airplanes");
+        TableElements.drawHeader();
+        for (var plane: AirlineCompany.getInstance().getPassenger()) {
+            TableElements.drawSplitter();
+            System.out.println(plane);
+
+        }
+        TableElements.drawSplitter();
         System.out.println();
     }
 

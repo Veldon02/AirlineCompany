@@ -1,17 +1,19 @@
 package AirplaneManagement.Menu.Commands;
 
 import AirplaneManagement.AirlineСompany.AirlineCompany;
+import AirplaneManagement.Program.TableElements;
 
 public class ShowUnderRepairCommand implements ICommand{
     @Override
     public void execute() {
-        int i = 1;
+        TableElements.drawHeader();
         for (var plane: AirlineCompany.getInstance().getAirplanes()) {
             if (plane.isUnderRepair()) {
-                System.out.printf("%d) %s\n", i, plane);
-                i++;
+                TableElements.drawSplitter();
+                System.out.println(plane);
             }
         }
+        TableElements.drawSplitter();
         System.out.println();
     }
 

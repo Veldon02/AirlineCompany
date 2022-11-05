@@ -10,6 +10,7 @@ public class Program {
         String command;
         System.out.println("Type help for all available commands");
         while (true) {
+            System.out.print(">");
             command = SafeScanner.scanString();
             menu.execute(command);
         }
