@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainController">
+   <ListView fx:id="listView" layoutX="172.0" layoutY="105.0" onMouseClicked="#handleMouseClick" prefHeight="215.0" prefWidth="254.0" />
+   <Label fx:id="label" layoutX="72.0" layoutY="35.0" text="Double click on the command to execute it">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Label>
+</AnchorPane>

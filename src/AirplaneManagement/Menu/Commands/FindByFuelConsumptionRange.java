@@ -1,30 +1,27 @@
 package AirplaneManagement.Menu.Commands;
 
-import AirplaneManagement.AirlineСompany.AirlineCompany;
-import AirplaneManagement.Program.SafeScanner;
-import AirplaneManagement.Program.TableElements;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class FindByFuelConsumptionRange implements ICommand{
     @Override
     public void execute() {
-        System.out.println("Enter the lower limit");
-        int num1 = SafeScanner.scanInt(1);
-        System.out.println("Enter the upper limit");
-        int num2 = SafeScanner.scanInt(num1);
-        var res = AirlineCompany.getInstance().findByFuelConsumptionRange(num1,num2);
-        if (res == null){
-            System.out.println("There are no such airplanes\n");
-            return;
+
+        try{
+            Stage showStage = new Stage();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/FXML/FindByFuelConsumptionRangeScene.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            showStage.setScene(scene);
+            showStage.setTitle("Find By Fuel Consumption Range");
+            showStage.show();
+            Logger.getGlobal().log(Level.INFO, "scene loaded successfully");
+        }catch(Exception e){
+            Logger.getGlobal().log(Level.WARNING, "failed to load scene");
         }
-        TableElements.drawHeader();
-        for (var plane: res) {
-            TableElements.drawSplitter();
-            System.out.println(plane);
-        }
-        TableElements.drawSplitter();
-        System.out.println();
     }
 
     @Override

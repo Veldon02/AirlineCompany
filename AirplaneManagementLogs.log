@@ -1,0 +1,518 @@
+Nov 18, 2022 11:08:48 AM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 18, 2022 11:08:52 AM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 18, 2022 11:11:48 AM AirplaneManagement.Menu.Menu execute
+INFO: command exit was entered
+Nov 18, 2022 11:12:56 AM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 18, 2022 11:12:57 AM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 18, 2022 11:12:59 AM AirplaneManagement.Menu.Menu execute
+INFO: command show was entered
+Nov 18, 2022 11:12:59 AM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 18, 2022 11:13:10 AM AirplaneManagement.Menu.Menu execute
+INFO: command show by type was entered
+Nov 18, 2022 11:13:10 AM AirplaneManagement.Airplane.AirplaneRepository getPassenger
+INFO: successfully read all passenger airplanes from the DB
+Nov 18, 2022 11:13:15 AM AirplaneManagement.Menu.Menu execute
+INFO: command add airplane was entered
+Nov 18, 2022 11:19:27 AM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 18, 2022 11:19:28 AM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 18, 2022 11:19:30 AM AirplaneManagement.Menu.Menu execute
+INFO: command show was selected
+Nov 18, 2022 11:19:30 AM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 18, 2022 11:19:30 AM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully
+Nov 18, 2022 11:19:34 AM AirplaneManagement.Menu.Menu execute
+INFO: command change was selected
+Nov 18, 2022 11:19:35 AM AirplaneManagement.Menu.Commands.ChangeCommand execute
+INFO: scene loaded successfully
+Nov 18, 2022 11:19:38 AM AirplaneManagement.Menu.Menu execute
+INFO: command exit was selected
+Nov 18, 2022 11:29:38 AM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 18, 2022 11:29:38 AM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 18, 2022 11:29:41 AM AirplaneManagement.Menu.Menu execute
+INFO: command add airplane was selected
+Nov 18, 2022 11:29:41 AM AirplaneManagement.Menu.Commands.AddAirplaneCommand execute
+INFO: scene loaded successfully
+Nov 18, 2022 11:29:43 AM Controllers.AddAirplaneSceneController handleMouseClick
+WARNING: null
+Nov 18, 2022 11:30:46 AM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 18, 2022 11:30:47 AM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 18, 2022 11:30:49 AM AirplaneManagement.Menu.Menu execute
+INFO: command add airplane was selected
+Nov 18, 2022 11:30:50 AM AirplaneManagement.Menu.Commands.AddAirplaneCommand execute
+INFO: scene loaded successfully
+Nov 18, 2022 11:31:27 AM Controllers.AddAirplaneSceneController handleMouseClick
+WARNING: null
+Nov 18, 2022 11:33:11 AM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 18, 2022 11:33:17 AM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 18, 2022 11:34:06 AM AirplaneManagement.Menu.Menu execute
+INFO: command add airplane was selected
+Nov 18, 2022 11:34:06 AM AirplaneManagement.Menu.Commands.AddAirplaneCommand execute
+INFO: scene loaded successfully
+Nov 18, 2022 11:34:08 AM Controllers.AddAirplaneSceneController handleMouseClick
+WARNING: null
+Nov 18, 2022 11:34:55 AM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 18, 2022 11:35:06 AM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 18, 2022 11:35:07 AM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 18, 2022 11:35:09 AM AirplaneManagement.Menu.Menu execute
+INFO: command add airplane was selected
+Nov 18, 2022 11:35:09 AM AirplaneManagement.Menu.Commands.AddAirplaneCommand execute
+INFO: scene loaded successfully
+Nov 18, 2022 11:35:41 AM Controllers.AddAirplaneSceneController handleMouseClick
+WARNING: null
+Nov 18, 2022 11:35:54 AM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 18, 2022 11:35:55 AM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 18, 2022 11:35:57 AM AirplaneManagement.Menu.Menu execute
+INFO: command add airplane was selected
+Nov 18, 2022 11:35:57 AM AirplaneManagement.Menu.Commands.AddAirplaneCommand execute
+INFO: scene loaded successfully
+Nov 18, 2022 11:36:02 AM Controllers.AddAirplaneSceneController handleMouseClick
+WARNING: null
+Nov 18, 2022 11:39:40 AM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 18, 2022 11:39:41 AM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 18, 2022 11:39:43 AM AirplaneManagement.Menu.Menu execute
+INFO: command add airplane was selected
+Nov 18, 2022 11:39:43 AM AirplaneManagement.Menu.Commands.AddAirplaneCommand execute
+INFO: scene loaded successfully
+Nov 18, 2022 11:39:44 AM Controllers.AddAirplaneSceneController handleMouseClick
+WARNING: was entered invalid input
+Nov 18, 2022 11:23:18 PM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 18, 2022 11:23:18 PM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 18, 2022 11:41:06 PM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 18, 2022 11:41:06 PM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 19, 2022 12:04:54 AM AirplaneManagement.Menu.Menu execute
+INFO: command exit was selected
+Nov 19, 2022 12:05:03 AM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 19, 2022 12:05:03 AM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 19, 2022 12:05:07 AM AirplaneManagement.Menu.Menu execute
+INFO: command Show was selected
+Nov 19, 2022 12:05:07 AM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 19, 2022 12:05:07 AM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully
+Nov 19, 2022 12:05:11 AM AirplaneManagement.Menu.Menu execute
+INFO: command Exit was selected
+Nov 19, 2022 10:37:43 PM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 19, 2022 10:37:44 PM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 19, 2022 10:37:46 PM AirplaneManagement.Menu.Menu execute
+INFO: command Show was selected
+Nov 19, 2022 10:37:46 PM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 19, 2022 10:37:46 PM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully
+Nov 19, 2022 10:38:03 PM AirplaneManagement.Menu.Menu execute
+INFO: command Add airplane was selected
+Nov 19, 2022 10:38:03 PM AirplaneManagement.Menu.Commands.AddAirplaneCommand execute
+INFO: scene loaded successfully
+Nov 19, 2022 10:38:15 PM Controllers.AddAirplaneSceneController handleMouseClick
+WARNING: was entered invalid input
+Nov 19, 2022 10:38:42 PM AirplaneManagement.Airplane.AirplaneRepository addAirplane
+INFO: successfully added airplane with id:11 to the DB
+Nov 19, 2022 10:38:42 PM Controllers.AddAirplaneSceneController handleMouseClick
+INFO: Airplane added successfully with id:11
+Nov 19, 2022 10:38:49 PM AirplaneManagement.Menu.Menu execute
+INFO: command Show was selected
+Nov 19, 2022 10:38:49 PM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 19, 2022 10:38:49 PM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully
+Nov 19, 2022 10:38:55 PM AirplaneManagement.Menu.Menu execute
+INFO: command Remove airplane was selected
+Nov 19, 2022 10:38:55 PM AirplaneManagement.Menu.Commands.RemoveAirplaneCommand execute
+INFO: scene loaded successfully
+Nov 19, 2022 10:38:57 PM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 19, 2022 10:38:57 PM AirplaneManagement.Airplane.AirplaneRepository deleteAirplane
+INFO: successfully removed airplane with id:11 from the DB
+Nov 19, 2022 10:38:57 PM Controllers.RemoveAirplaneSceneController handleMouseClick
+INFO: airplane with id 11 removed
+Nov 19, 2022 10:39:01 PM AirplaneManagement.Menu.Menu execute
+INFO: command Show was selected
+Nov 19, 2022 10:39:01 PM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 19, 2022 10:39:01 PM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully
+Nov 19, 2022 10:39:05 PM AirplaneManagement.Menu.Menu execute
+INFO: command Exit was selected
+Nov 19, 2022 10:53:29 PM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 19, 2022 10:53:29 PM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 19, 2022 10:53:31 PM AirplaneManagement.Menu.Menu execute
+INFO: command Show was selected
+Nov 19, 2022 10:53:31 PM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 19, 2022 10:53:31 PM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully
+Nov 19, 2022 10:53:40 PM AirplaneManagement.Menu.Menu execute
+INFO: command Remove airplane was selected
+Nov 19, 2022 10:53:40 PM AirplaneManagement.Menu.Commands.RemoveAirplaneCommand execute
+INFO: scene loaded successfully
+Nov 19, 2022 10:53:43 PM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 19, 2022 10:53:43 PM AirplaneManagement.Airplane.AirplaneRepository deleteAirplane
+INFO: successfully removed airplane with id:12 from the DB
+Nov 19, 2022 10:53:43 PM Controllers.RemoveAirplaneSceneController handleMouseClick
+INFO: airplane with id 12 removed
+Nov 19, 2022 10:53:46 PM AirplaneManagement.Menu.Menu execute
+INFO: command Exit was selected
+Nov 19, 2022 10:54:42 PM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 19, 2022 10:54:42 PM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 19, 2022 10:54:44 PM AirplaneManagement.Menu.Menu execute
+INFO: command Show was selected
+Nov 19, 2022 10:54:44 PM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 19, 2022 10:54:44 PM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully
+Nov 19, 2022 10:54:48 PM AirplaneManagement.Menu.Menu execute
+INFO: command Exit was selected
+Nov 19, 2022 10:58:47 PM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 19, 2022 10:58:47 PM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 19, 2022 10:58:49 PM AirplaneManagement.Menu.Menu execute
+INFO: command Remove airplane was selected
+Nov 19, 2022 10:58:49 PM AirplaneManagement.Menu.Commands.RemoveAirplaneCommand execute
+INFO: scene loaded successfully
+Nov 19, 2022 10:58:51 PM AirplaneManagement.Menu.Menu execute
+INFO: command Show was selected
+Nov 19, 2022 10:58:51 PM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 19, 2022 10:58:52 PM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully
+Nov 19, 2022 10:59:57 PM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 19, 2022 10:59:58 PM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 19, 2022 11:00:03 PM AirplaneManagement.Menu.Menu execute
+INFO: command Show was selected
+Nov 19, 2022 11:00:03 PM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 19, 2022 11:00:03 PM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully
+Nov 19, 2022 11:00:09 PM AirplaneManagement.Menu.Menu execute
+INFO: command Remove airplane was selected
+Nov 19, 2022 11:00:09 PM AirplaneManagement.Menu.Commands.RemoveAirplaneCommand execute
+INFO: scene loaded successfully
+Nov 19, 2022 11:00:11 PM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 19, 2022 11:00:11 PM AirplaneManagement.Airplane.AirplaneRepository deleteAirplane
+INFO: successfully removed airplane with id:13 from the DB
+Nov 19, 2022 11:00:11 PM Controllers.RemoveAirplaneSceneController handleMouseClick
+INFO: airplane with id 13 removed
+Nov 19, 2022 11:00:14 PM AirplaneManagement.Menu.Menu execute
+INFO: command Exit was selected
+Nov 19, 2022 11:37:25 PM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 19, 2022 11:37:25 PM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 19, 2022 11:37:27 PM AirplaneManagement.Menu.Menu execute
+INFO: command Show was selected
+Nov 19, 2022 11:37:27 PM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 19, 2022 11:37:27 PM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully
+Nov 19, 2022 11:37:37 PM AirplaneManagement.Menu.Menu execute
+INFO: command Exit was selected
+Nov 19, 2022 11:38:58 PM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 19, 2022 11:38:58 PM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 19, 2022 11:39:02 PM AirplaneManagement.Menu.Menu execute
+INFO: command Exit was selected
+Nov 19, 2022 11:39:31 PM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 19, 2022 11:39:32 PM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 19, 2022 11:39:34 PM AirplaneManagement.Menu.Menu execute
+INFO: command Show was selected
+Nov 19, 2022 11:39:34 PM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 19, 2022 11:39:34 PM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully
+Nov 19, 2022 11:39:41 PM AirplaneManagement.Menu.Menu execute
+INFO: command Remove airplane was selected
+Nov 19, 2022 11:39:41 PM AirplaneManagement.Menu.Commands.RemoveAirplaneCommand execute
+INFO: scene loaded successfully
+Nov 19, 2022 11:39:44 PM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 19, 2022 11:39:44 PM AirplaneManagement.Airplane.AirplaneRepository deleteAirplane
+INFO: successfully removed airplane with id:14 from the DB
+Nov 19, 2022 11:39:44 PM Controllers.RemoveAirplaneSceneController handleMouseClick
+INFO: airplane with id 14 removed
+Nov 19, 2022 11:39:48 PM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 19, 2022 11:39:48 PM AirplaneManagement.Airplane.AirplaneRepository deleteAirplane
+INFO: successfully removed airplane with id:15 from the DB
+Nov 19, 2022 11:39:48 PM Controllers.RemoveAirplaneSceneController handleMouseClick
+INFO: airplane with id 15 removed
+Nov 19, 2022 11:39:51 PM AirplaneManagement.Menu.Menu execute
+INFO: command Show was selected
+Nov 19, 2022 11:39:51 PM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 19, 2022 11:39:51 PM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully
+Nov 19, 2022 11:39:53 PM AirplaneManagement.Menu.Menu execute
+INFO: command Exit was selected
+Nov 19, 2022 11:47:15 PM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 19, 2022 11:47:16 PM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 19, 2022 11:47:19 PM AirplaneManagement.Menu.Menu execute
+INFO: command Show was selected
+Nov 19, 2022 11:47:19 PM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 19, 2022 11:47:19 PM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully
+Nov 19, 2022 11:47:22 PM AirplaneManagement.Menu.Menu execute
+INFO: command Exit was selected
+Nov 19, 2022 11:47:58 PM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 19, 2022 11:47:59 PM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 19, 2022 11:48:04 PM AirplaneManagement.Menu.Menu execute
+INFO: command Show was selected
+Nov 19, 2022 11:48:04 PM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 19, 2022 11:48:04 PM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully
+Nov 19, 2022 11:51:50 PM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 19, 2022 11:51:51 PM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 19, 2022 11:51:53 PM AirplaneManagement.Menu.Menu execute
+INFO: command Show was selected
+Nov 19, 2022 11:51:53 PM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 19, 2022 11:51:53 PM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully
+Nov 19, 2022 11:51:57 PM AirplaneManagement.Menu.Menu execute
+INFO: command Remove airplane was selected
+Nov 19, 2022 11:51:57 PM AirplaneManagement.Menu.Commands.RemoveAirplaneCommand execute
+INFO: scene loaded successfully
+Nov 19, 2022 11:52:00 PM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 19, 2022 11:52:00 PM AirplaneManagement.Airplane.AirplaneRepository deleteAirplane
+INFO: successfully removed airplane with id:16 from the DB
+Nov 19, 2022 11:52:00 PM Controllers.RemoveAirplaneSceneController handleMouseClick
+INFO: airplane with id 16 removed
+Nov 19, 2022 11:52:03 PM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 19, 2022 11:52:03 PM AirplaneManagement.Airplane.AirplaneRepository deleteAirplane
+INFO: successfully removed airplane with id:17 from the DB
+Nov 19, 2022 11:52:03 PM Controllers.RemoveAirplaneSceneController handleMouseClick
+INFO: airplane with id 17 removed
+Nov 19, 2022 11:52:05 PM AirplaneManagement.Menu.Menu execute
+INFO: command Exit was selected
+Nov 20, 2022 12:08:43 AM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 20, 2022 12:08:43 AM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 20, 2022 12:08:46 AM AirplaneManagement.Menu.Menu execute
+INFO: command Show was selected
+Nov 20, 2022 12:08:46 AM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 20, 2022 12:08:46 AM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully
+Nov 20, 2022 12:08:51 AM AirplaneManagement.Menu.Menu execute
+INFO: command Remove airplane was selected
+Nov 20, 2022 12:08:51 AM AirplaneManagement.Menu.Commands.RemoveAirplaneCommand execute
+INFO: scene loaded successfully
+Nov 20, 2022 12:08:54 AM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 20, 2022 12:08:54 AM AirplaneManagement.Airplane.AirplaneRepository deleteAirplane
+INFO: successfully removed airplane with id:18 from the DB
+Nov 20, 2022 12:08:54 AM Controllers.RemoveAirplaneSceneController handleMouseClick
+INFO: airplane with id 18 removed
+Nov 20, 2022 12:08:57 AM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 20, 2022 12:08:57 AM AirplaneManagement.Airplane.AirplaneRepository deleteAirplane
+INFO: successfully removed airplane with id:19 from the DB
+Nov 20, 2022 12:08:57 AM Controllers.RemoveAirplaneSceneController handleMouseClick
+INFO: airplane with id 19 removed
+Nov 20, 2022 12:08:59 AM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 20, 2022 12:08:59 AM AirplaneManagement.Airplane.AirplaneRepository deleteAirplane
+INFO: successfully removed airplane with id:20 from the DB
+Nov 20, 2022 12:08:59 AM Controllers.RemoveAirplaneSceneController handleMouseClick
+INFO: airplane with id 20 removed
+Nov 20, 2022 12:09:01 AM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 20, 2022 12:09:01 AM AirplaneManagement.Airplane.AirplaneRepository deleteAirplane
+INFO: successfully removed airplane with id:21 from the DB
+Nov 20, 2022 12:09:01 AM Controllers.RemoveAirplaneSceneController handleMouseClick
+INFO: airplane with id 21 removed
+Nov 20, 2022 12:09:04 AM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 20, 2022 12:09:04 AM AirplaneManagement.Airplane.AirplaneRepository deleteAirplane
+INFO: successfully removed airplane with id:22 from the DB
+Nov 20, 2022 12:09:04 AM Controllers.RemoveAirplaneSceneController handleMouseClick
+INFO: airplane with id 22 removed
+Nov 20, 2022 12:09:06 AM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 20, 2022 12:09:06 AM AirplaneManagement.Airplane.AirplaneRepository deleteAirplane
+INFO: successfully removed airplane with id:23 from the DB
+Nov 20, 2022 12:09:06 AM Controllers.RemoveAirplaneSceneController handleMouseClick
+INFO: airplane with id 23 removed
+Nov 20, 2022 12:09:09 AM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 20, 2022 12:09:09 AM AirplaneManagement.Airplane.AirplaneRepository deleteAirplane
+INFO: successfully removed airplane with id:24 from the DB
+Nov 20, 2022 12:09:09 AM Controllers.RemoveAirplaneSceneController handleMouseClick
+INFO: airplane with id 24 removed
+Nov 20, 2022 12:09:11 AM AirplaneManagement.Menu.Menu execute
+INFO: command Show was selected
+Nov 20, 2022 12:09:11 AM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 20, 2022 12:09:11 AM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully
+Nov 20, 2022 12:09:16 AM AirplaneManagement.Menu.Menu execute
+INFO: command Exit was selected
+Nov 20, 2022 12:10:29 AM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 20, 2022 12:10:30 AM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 20, 2022 12:10:31 AM AirplaneManagement.Menu.Menu execute
+INFO: command Show was selected
+Nov 20, 2022 12:10:32 AM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 20, 2022 12:10:32 AM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully
+Nov 20, 2022 12:11:49 AM AirplaneManagement.Menu.Menu execute
+INFO: command Exit was selected
+Nov 20, 2022 12:13:41 AM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 20, 2022 12:13:41 AM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 20, 2022 12:13:44 AM AirplaneManagement.Menu.Menu execute
+INFO: command Exit was selected
+Nov 20, 2022 12:15:20 AM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 20, 2022 12:15:20 AM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 20, 2022 12:15:23 AM AirplaneManagement.Menu.Menu execute
+INFO: command Show was selected
+Nov 20, 2022 12:15:23 AM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 20, 2022 12:15:23 AM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully
+Nov 20, 2022 12:15:37 AM AirplaneManagement.Menu.Menu execute
+INFO: command Exit was selected
+Nov 20, 2022 12:19:36 AM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 20, 2022 12:19:37 AM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 20, 2022 12:19:40 AM AirplaneManagement.Menu.Menu execute
+INFO: command Show was selected
+Nov 20, 2022 12:19:40 AM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 20, 2022 12:19:40 AM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully
+Nov 20, 2022 12:19:44 AM AirplaneManagement.Menu.Menu execute
+INFO: command Exit was selected
+Nov 20, 2022 12:27:15 AM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 20, 2022 12:27:15 AM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 20, 2022 12:27:17 AM AirplaneManagement.Menu.Menu execute
+INFO: command Show was selected
+Nov 20, 2022 12:27:17 AM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 20, 2022 12:27:17 AM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully
+Nov 20, 2022 12:27:26 AM AirplaneManagement.Menu.Menu execute
+INFO: command Exit was selected
+Nov 20, 2022 1:43:19 AM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 20, 2022 1:43:20 AM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 20, 2022 1:43:23 AM AirplaneManagement.Menu.Menu execute
+INFO: command Get statistics was selected
+Nov 20, 2022 1:43:23 AM AirplaneManagement.Airplane.AirplaneRepository getCapacitySum
+INFO: successfully got total passenger seat number from DB
+Nov 20, 2022 1:43:23 AM AirplaneManagement.Airplane.AirplaneRepository getCarryingCapacitySum
+INFO: successfully got total carrying capacity from DB
+Nov 20, 2022 1:43:23 AM Controllers.GetStatisticsSceneController initialize
+INFO: got statistics successfully
+Nov 20, 2022 1:43:23 AM AirplaneManagement.Menu.Commands.GetStatisticsCommand execute
+INFO: scene loaded successfully
+Nov 20, 2022 1:43:49 AM AirplaneManagement.Menu.Menu execute
+INFO: command Exit was selected
+Nov 20, 2022 1:54:12 AM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 20, 2022 1:54:13 AM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 20, 2022 1:54:14 AM AirplaneManagement.Menu.Menu execute
+INFO: command Show was selected
+Nov 20, 2022 1:54:14 AM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 20, 2022 1:54:15 AM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully
+Nov 20, 2022 1:54:16 AM AirplaneManagement.Airplane.AirplaneRepository sortByFlightRange
+INFO: successfully got sorted airplanes from DB
+Nov 20, 2022 1:54:16 AM Controllers.ShowSceneController choiceBoxSelect
+INFO: Showed Sort by flight rangeairplanes
+Nov 20, 2022 1:54:25 AM AirplaneManagement.Menu.Menu execute
+INFO: command Exit was selected
+Nov 20, 2022 1:55:32 AM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 20, 2022 1:55:32 AM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 20, 2022 1:55:34 AM AirplaneManagement.Menu.Menu execute
+INFO: command Show was selected
+Nov 20, 2022 1:55:34 AM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 20, 2022 1:55:34 AM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully
+Nov 20, 2022 1:55:36 AM AirplaneManagement.Airplane.AirplaneRepository sortByFlightRange
+INFO: successfully got sorted airplanes from DB
+Nov 20, 2022 1:55:36 AM Controllers.ShowSceneController choiceBoxSelect
+INFO: Showed Sort by flight rangeairplanes
+Nov 20, 2022 1:55:41 AM AirplaneManagement.Menu.Menu execute
+INFO: command Exit was selected
+Nov 20, 2022 1:57:35 AM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 20, 2022 1:57:36 AM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 20, 2022 1:57:37 AM AirplaneManagement.Menu.Menu execute
+INFO: command Exit was selected
+Nov 20, 2022 2:06:29 AM AirplaneManagement.Program.Program initializeLogger
+INFO: logger set up successfully
+Nov 20, 2022 2:06:30 AM AirplaneManagement.Airplane.AirplaneRepository <init>
+INFO: DB was connected successfully
+Nov 20, 2022 2:06:33 AM AirplaneManagement.Menu.Menu execute
+INFO: command Show was selected
+Nov 20, 2022 2:06:33 AM AirplaneManagement.Airplane.AirplaneRepository getIDs
+INFO: successfully read all airplanes` id from the DB
+Nov 20, 2022 2:06:33 AM AirplaneManagement.Menu.Commands.ShowCommand execute
+INFO: scene loaded successfully

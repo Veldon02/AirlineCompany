@@ -23,6 +23,10 @@ public class Airplane  {
         this.fuelConsumption = builder.fuelConsumption;
     }
 
+    public int getID(){
+        return ID;
+    }
+
     public String getName() {
         return name;
     }
@@ -61,9 +65,22 @@ public class Airplane  {
         this.fuelConsumption = fuelConsumption;
     }
 
+//    @Override
+//    public String toString(){
+//        return String.format("|%4d|%20s|%12s|%15s|%19d|%20d|%24d|%18d|",
+//                ID,name,type,underRepair,fuelConsumption,carryingCapacity,passengerSeatsNumber,maxFlightRange);
+//    }
     @Override
     public String toString(){
-        return String.format("|%4d|%12s|%10s|%13s|%17d|%18d|%22d|%16d|",
+        return String.format("""
+                        ID: %d
+                        Name: %s
+                        Type: %s
+                        Under Repair: %s
+                        Fuel Consumption: %d
+                        Carrying Capacity: %d
+                        Passenger Seats Number: %d
+                        Max Flight Range: %d""",
                 ID,name,type,underRepair,fuelConsumption,carryingCapacity,passengerSeatsNumber,maxFlightRange);
     }
 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddAirplaneSceneController">
+   <Label layoutX="128.0" layoutY="91.0" text="Name" />
+   <TextField fx:id="nameField" layoutX="128.0" layoutY="109.0" />
+   <Label layoutX="128.0" layoutY="152.0" text="Type(Passenger or Cargo)" />
+   <TextField fx:id="typeField" layoutX="128.0" layoutY="170.0" />
+   <TextField fx:id="underRepairField" layoutX="128.0" layoutY="227.0" />
+   <Label layoutX="128.0" layoutY="209.0" text="Under Repair" />
+   <TextField fx:id="fuelConsumptionField" layoutX="331.0" layoutY="109.0" />
+   <Label layoutX="331.0" layoutY="209.0" text="Max Flight Range" />
+   <Label layoutX="331.0" layoutY="152.0" text="Carrying Capacity" />
+   <TextField fx:id="passengerSeatsNumberField" layoutX="331.0" layoutY="170.0" />
+   <Label layoutX="331.0" layoutY="91.0" text="Passenger Seats Number" />
+   <TextField fx:id="carryingCapacityField" layoutX="331.0" layoutY="227.0" />
+   <Label layoutX="128.0" layoutY="264.0" text="Fuel Consumption" />
+   <TextField fx:id="maxFlightRangeField" layoutX="128.0" layoutY="282.0" />
+   <Button fx:id="addButton" layoutX="335.0" layoutY="282.0" mnemonicParsing="false" onMouseClicked="#handleMouseClick" prefHeight="26.0" prefWidth="150.0" text="add" />
+   <Label fx:id="errorLabel" alignment="CENTER" layoutX="202.0" layoutY="336.0" prefHeight="18.0" prefWidth="194.0" textAlignment="CENTER" />
+</AnchorPane>

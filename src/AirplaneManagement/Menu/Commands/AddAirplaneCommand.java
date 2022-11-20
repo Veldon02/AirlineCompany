@@ -1,44 +1,28 @@
 package AirplaneManagement.Menu.Commands;
 
-import AirplaneManagement.AirlineСompany.AirlineCompany;
-import AirplaneManagement.Airplane.Airplane;
-import AirplaneManagement.Program.SafeScanner;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class AddAirplaneCommand implements ICommand{
     @Override
     public void execute() {
-        System.out.println("Enter name: ");
-        var name = SafeScanner.scanString(45);
 
-        System.out.println("Enter type(1 - passenger, 2 - cargo): ");
-        var type = (SafeScanner.scanInt(1,2)==1)?"Passenger":"Cargo";
+        try{
+            Stage showStage = new Stage();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/FXML/AddAirplaneScene.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            showStage.setScene(scene);
+            showStage.setTitle("Add Airplane");
+            showStage.show();
+            Logger.getGlobal().log(Level.INFO, "scene loaded successfully");
+        }catch(Exception e){
+            Logger.getGlobal().log(Level.WARNING, "failed to load scene");
+        }
 
-        System.out.println("Is airplane under repair(1 - yes, 2 - no): ");
-        var isUnderRepair = SafeScanner.scanInt(1,2) == 1;
-
-        System.out.println("Enter fuel consumption:");
-        var fuelConsumption = SafeScanner.scanInt(1,65536);
-
-        System.out.println("Enter carrying capacity:");
-        var carryingCapacity = SafeScanner.scanInt(1);
-
-        System.out.println("Enter passenger seats number:");
-        var passengerSeatsNumber = SafeScanner.scanInt(1,65536);
-
-        System.out.println("Enter max flight range:");
-        var maxFlightRange = SafeScanner.scanInt(1,65536);
-
-        Airplane airplane = new Airplane.AirplaneBuilder(name,type)
-                .setUnderRepair(isUnderRepair)
-                .setFuelConsumption(fuelConsumption)
-                .setCarryingCapacity(carryingCapacity)
-                .setPassengerSeatsNumber(passengerSeatsNumber)
-                .setMaxFlightRange(maxFlightRange)
-                .build();
-        if (AirlineCompany.getInstance().addAirplane(airplane))
-            System.out.println("Airplane is added");
     }
 
     @Override

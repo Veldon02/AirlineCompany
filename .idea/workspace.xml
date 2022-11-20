@@ -1,31 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="AirplaneManagement:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="de3e0091-a1a8-41fc-865a-e39b7f5cad6a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ChangeCarryingCapacityCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ChangeMaxFlightRangeCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ChangePassengerSeatsNumberCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ChangeTypeCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/GetCapacitySumCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/GetCarryingCapacitySumCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AirplaneManagement/Program/TableElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/AirplaneManagement_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/AirplaneManagement_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/AirlineСompany/AirlineCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/AirlineСompany/AirlineCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Airplane/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Airplane/Airplane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Airplane/AirplaneRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Airplane/AirplaneRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/AddAirplaneCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/AddAirplaneCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ChangeFlightCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/FindByFuelConsumptionRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/FindByFuelConsumptionRange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowCargoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowCargoCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowPassengerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowPassengerCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowPrivateCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowUnderRepairCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowUnderRepairCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowWorkingCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/ShowWorkingCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/SortByFlightRangeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/SortByFlightRangeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Menu/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AirplaneManagement/Program/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AirplaneManagement/Program/Program.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +19,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Tag Library Descriptor" />
+        <option value="FxmlFile" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -57,16 +43,23 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Java_Projects/AirplaneManagement&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -75,14 +68,124 @@
     ]
   }
 }</component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java_Projects\AirplaneManagement\src\FXML" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java_Projects\AirplaneManagement\src\FXML" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="AirplaneManagement.Airplane" />
+      <recent name="AirplaneManagement.Program" />
+      <recent name="AirplaneManagement.Test" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Controllers" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Program">
     <configuration name="Program" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="AirplaneManagement.Program.Program" />
       <module name="AirplaneManagement" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;D:\javafx-sdk-19\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AirplaneRepositoryTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="AirplaneManagement" />
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.AirplaneRepositoryTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AirplaneRepositoryTest.deleteAirplane" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AirplaneManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.AirplaneRepositoryTest" />
+      <option name="METHOD_NAME" value="deleteAirplane" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AirplaneRepositoryTest.getAirplaneNormalID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AirplaneManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.AirplaneRepositoryTest" />
+      <option name="METHOD_NAME" value="getAirplaneNormalID" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AirplaneRepositoryTest.getCargo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AirplaneManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.AirplaneRepositoryTest" />
+      <option name="METHOD_NAME" value="getCargo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AirplaneRepositoryTest.getIDs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AirplaneManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.AirplaneRepositoryTest" />
+      <option name="METHOD_NAME" value="getIDs" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Program" />
+      <item itemvalue="JUnit.AirplaneRepositoryTest" />
+      <item itemvalue="JUnit.AirplaneRepositoryTest.deleteAirplane" />
+      <item itemvalue="JUnit.AirplaneRepositoryTest.getAirplaneNormalID" />
+      <item itemvalue="JUnit.AirplaneRepositoryTest.getCargo" />
+      <item itemvalue="JUnit.AirplaneRepositoryTest.getIDs" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AirplaneRepositoryTest.deleteAirplane" />
+        <item itemvalue="JUnit.AirplaneRepositoryTest.getCargo" />
+        <item itemvalue="JUnit.AirplaneRepositoryTest.getIDs" />
+        <item itemvalue="JUnit.AirplaneRepositoryTest.getAirplaneNormalID" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -107,7 +210,28 @@
       <workItem from="1667505761330" duration="5656000" />
       <workItem from="1667564092770" duration="15279000" />
       <workItem from="1667656220408" duration="3033000" />
-      <workItem from="1667659505032" duration="6251000" />
+      <workItem from="1667659505032" duration="6357000" />
+      <workItem from="1667820147294" duration="52000" />
+      <workItem from="1668152699773" duration="8584000" />
+      <workItem from="1668413635167" duration="1795000" />
+      <workItem from="1668442285230" duration="2792000" />
+      <workItem from="1668446413770" duration="13268000" />
+      <workItem from="1668511021814" duration="7796000" />
+      <workItem from="1668532287004" duration="756000" />
+      <workItem from="1668533409133" duration="124000" />
+      <workItem from="1668533584410" duration="3454000" />
+      <workItem from="1668539022237" duration="95000" />
+      <workItem from="1668539171014" duration="10209000" />
+      <workItem from="1668591729385" duration="357000" />
+      <workItem from="1668600206991" duration="4210000" />
+      <workItem from="1668604467573" duration="21617000" />
+      <workItem from="1668678194826" duration="12443000" />
+      <workItem from="1668700533772" duration="884000" />
+      <workItem from="1668718791410" duration="2561000" />
+      <workItem from="1668759421656" duration="6981000" />
+      <workItem from="1668791156853" duration="4313000" />
+      <workItem from="1668863706826" duration="11342000" />
+      <workItem from="1668944147861" duration="2246000" />
     </task>
     <servers />
   </component>
@@ -128,15 +252,14 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NoClassDefFoundError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/AirplaneManagement/Airplane/AirplaneRepository.java</url>
-          <line>148</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/AirplaneManagement/Menu/Commands/AddAirplaneCommand.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="5" />
+          <url>file://$PROJECT_DIR$/src/AirplaneManagement/Program/MailHandler.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

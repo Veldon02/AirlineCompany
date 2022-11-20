@@ -3,6 +3,8 @@ package AirplaneManagement.Menu;
 import AirplaneManagement.Menu.Commands.*;
 
 import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public final class Menu {
     private static Menu instance;
@@ -25,30 +27,31 @@ public final class Menu {
 
     public void execute(String command){
         try{
-            commands.get(command).execute();
+            var cnd = commands.get(command);
+            Logger.getGlobal().log(Level.INFO,"command "+command+" was selected");
+            cnd.execute();
         }catch (Exception e){
-            System.out.println("Invalid command!");
+            Logger.getGlobal().log(Level.WARNING,"There is not such command: "+command);
         }
     }
     private void initializeCommands(){
-        commands.put("help", new HelpCommand());
-        commands.put("show", new ShowCommand());
-        commands.put("show working", new ShowWorkingCommand());
-        commands.put("show under repair", new ShowUnderRepairCommand());
-        commands.put("show cargo", new ShowCargoCommand());
-        commands.put("show passenger", new ShowPassengerCommand());
-        commands.put("add airplane", new AddAirplaneCommand());
-        commands.put("remove airplane", new RemoveAirplaneCommand());
-        commands.put("send for repair", new SendForRepairCommand());
-        commands.put("pick up from repair", new PickUpFromRepairCommand());
-        commands.put("change type", new ChangeTypeCommand());
-        commands.put("change carrying capacity", new ChangeCarryingCapacityCommand());
-        commands.put("change passenger seats number", new ChangePassengerSeatsNumberCommand());
-        commands.put("change max flight range", new ChangeMaxFlightRangeCommand());
-        commands.put("sort by flight range", new SortByFlightRangeCommand());
-        commands.put("find by fuel consumption range", new FindByFuelConsumptionRange());
-        commands.put("get capacity sum", new GetCapacitySumCommand());
-        commands.put("get carrying capacity sum", new GetCarryingCapacitySumCommand());
-        commands.put("exit", new ExitCommand());
+        commands.put("Show", new ShowCommand());
+        commands.put("Show by technical status", new ShowByTechnicalStatusCommand());
+        commands.put("Show by type", new ShowByTypeCommand());
+        commands.put("Add airplane", new AddAirplaneCommand());
+        commands.put("Remove airplane", new RemoveAirplaneCommand());
+        commands.put("Change", new ChangeCommand());
+        commands.put("Find by fuel consumption range", new FindByFuelConsumptionRange());
+        commands.put("Get statistics", new GetStatisticsCommand());
+        commands.put("Exit", new ExitCommand());
+    }
+
+    public ArrayList<String> getShowCommands(){
+        ArrayList<String> res = new ArrayList<>();
+        for (var cmn: commands.keySet()) {
+            if (cmn.contains("show"))
+                res.add(cmn);
+        }
+        return res;
     }
 }

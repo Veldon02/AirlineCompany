@@ -2,23 +2,23 @@ package AirplaneManagement.AirlineСompany;
 
 import AirplaneManagement.Airplane.Airplane;
 import AirplaneManagement.Airplane.AirplaneRepository;
-import AirplaneManagement.Menu.Commands.ExitCommand;
-import AirplaneManagement.Menu.Commands.HelpCommand;
-import AirplaneManagement.Menu.Menu;
 
+import java.sql.ResultSet;
 import java.util.ArrayList;
-import java.util.Hashtable;
-import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class AirlineCompany {
     private static AirlineCompany instance;
     private String companyName;
     private final AirplaneRepository airplaneRepository;
+    public void setCompanyName(String name){
+        companyName = name;
+    }
 
     public String getCompanyName(){
         return companyName;
     }
-
 
 
     private AirlineCompany() {
@@ -34,32 +34,27 @@ public class AirlineCompany {
     public ArrayList<Airplane> getAirplanes(){
         return airplaneRepository.getAll();
     }
+    public Airplane getAirplane(int id){
+        return airplaneRepository.getAirplane(id);
+    }
 
-    public boolean addAirplane(Airplane airplane){
+    public int addAirplane(Airplane airplane){
         return airplaneRepository.addAirplane(airplane);
     }
 
-    public void deleteAirplane(int id){
-        airplaneRepository.deleteAirplane(id);
-    }
-
-    public void sendAirplaneForRepair(int id){
-        airplaneRepository.sendAirplaneForRepair(id);
-    }
-
-    public void pickUpFromRepair(int id){
-        airplaneRepository.pickUpFromRepair(id);
+    public boolean deleteAirplane(int id){
+        return airplaneRepository.deleteAirplane(id);
     }
 
     public ArrayList<Integer> getIDs(){
         return airplaneRepository.getIDs();
     }
 
-    public ArrayList<Airplane> sortByFlightRange(){
+    public ArrayList<Integer> sortByFlightRange(){
         return airplaneRepository.sortByFlightRange();
     }
 
-    public ArrayList<Airplane> findByFuelConsumptionRange(int num1, int num2){
+    public ArrayList<Integer> findByFuelConsumptionRange(int num1, int num2){
         return airplaneRepository.findByFuelConsumptionRange(num1, num2);
     }
 
@@ -71,26 +66,25 @@ public class AirlineCompany {
         return airplaneRepository.getCapacitySum();
     }
 
-    public ArrayList<Airplane> getCargo(){
+    public ArrayList<Integer> getCargo(){
         return airplaneRepository.getCargo();
     }
-    public ArrayList<Airplane> getPassenger(){
+    public ArrayList<Integer> getPassenger(){
         return airplaneRepository.getPassenger();
     }
-
-    public void changeType(int id, int newType){
-        airplaneRepository.changeType(id, newType);
+    public ArrayList<Integer> getWorking(){
+        return airplaneRepository.getWorking();
     }
 
-    public void changeCarryingCapacity(int id, int carryingCapacity){
-        airplaneRepository.changeCarryingCapacity(id,carryingCapacity);
+    public ArrayList<Integer> getUnderRepair(){
+        return airplaneRepository.getUnderRepair();
     }
 
-    public void changePassengerSeatsNumberCommand(int id, int number){
-        airplaneRepository.changePassengerSeatsNumberCommand(id,number);
+    public void changeInt(int id,String column, int newValue ){
+        airplaneRepository.changeInt(id,column,newValue);
     }
 
-    public void changeMaxFlightRange(int id, int range){
-        airplaneRepository.changeMaxFlightRange(id,range);
+    public void changeString(int id,String column, String newValue, boolean needBrackets ){
+        airplaneRepository.changeString(id,column,newValue,needBrackets);
     }
 }

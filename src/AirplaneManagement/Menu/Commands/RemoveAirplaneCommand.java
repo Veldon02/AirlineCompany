@@ -1,19 +1,27 @@
 package AirplaneManagement.Menu.Commands;
 
-import AirplaneManagement.AirlineСompany.AirlineCompany;
-import AirplaneManagement.Program.SafeScanner;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-import java.sql.SQLOutput;
-import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class RemoveAirplaneCommand implements ICommand{
     @Override
     public void execute() {
-        System.out.println("Enter ID of airplane:");
-        var airlineCompany = AirlineCompany.getInstance();
-        int id = SafeScanner.scanInt(airlineCompany.getIDs());
-        airlineCompany.deleteAirplane(id);
-        System.out.println("you removed airplane");
+
+        try{
+            Stage showStage = new Stage();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/FXML/RemoveAirplaneScene.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            showStage.setScene(scene);
+            showStage.setTitle("Remove Airplane");
+            showStage.show();
+            Logger.getGlobal().log(Level.INFO, "scene loaded successfully");
+        }catch(Exception e){
+            Logger.getGlobal().log(Level.WARNING, "failed to load scene");
+        }
     }
 
     @Override
